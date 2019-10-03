@@ -1,6 +1,7 @@
 const driver = {};
 function updateDriverWithKeyAndValue(driver, key, value) {
   return Object.assign({}, driver, { [key]: value });
+  // Shallow copy
   //   const newDriver = { ...driver };
   //   newDriver[key] = value;
   //   return newDriver;
